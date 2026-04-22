@@ -31,7 +31,7 @@ export default function PartnersSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
   
-  const logosPerView = 12; // Show 12 logos at a time
+  const logosPerView = 8; // Show 8 logos at a time
   const autoSlideInterval = 3000; // 3 seconds
 
   // Auto slide effect
@@ -109,7 +109,7 @@ export default function PartnersSection() {
             >
               {/* Carousel Container */}
               <div className="overflow-hidden rounded-xl">
-                <div className="grid grid-cols-3 md:grid-cols-4 gap-4">
+                <div className="grid grid-cols-4 gap-4">
                   {visibleLogos.map((partner, index) => (
                     <motion.div
                       key={`${partner.id}-${currentIndex}-${index}`}
